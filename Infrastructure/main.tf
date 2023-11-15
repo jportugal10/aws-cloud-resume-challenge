@@ -62,7 +62,7 @@ resource "aws_iam_policy" "aws_iam_policy_for_terraform_resume_project_policy" {
           "logs:PutLogEvents"
         ],
         "Effect": "Allow",
-        "Resource": "arn:aws:logs:us-west-1:598432830149:*"
+        "Resource": var.arn
       },
       {
         "Effect": "Allow",
@@ -71,7 +71,7 @@ resource "aws_iam_policy" "aws_iam_policy_for_terraform_resume_project_policy" {
           "dynamodb:GetItem",
           "dynamodb:PutItem"
         ],
-        "Resource": "arn:aws:dynamodb:us-west-1:598432830149:table/cloudresume-challenge"
+        "Resource": var.second_arn
       }
     ]
   })
@@ -99,7 +99,7 @@ data "archive_file" "zip" {
 
 resource "aws_lambda_function_url" "url1" {
   function_name      = aws_lambda_function.myfunction.function_name
-  authorization_type = "NONE"
+  authorization_type = "AWS_IAM"
 
   cors {
     allow_credentials = false
