@@ -5,9 +5,11 @@ stages:
 deploy to s3:
   stage: deploy
   image:
-    name: amazon/awscli:2.11.21
+    name: registry.gitlab.com/gitlab-org/cloud-deploy/aws-base:latest
     entrypoint: [""]
   script:
-    - aws s3 cp index.html $S3_BUCKET/index.html
+    - aws s3 cp website/index.html $S3_BUCKET/index.html
+    - aws s3 cp website/assets/js/main.js $S3_BUCKET/main.js
+    - aws s3 cp website/assets $S3_BUCKET/assets --recursive 
 
-    
+
