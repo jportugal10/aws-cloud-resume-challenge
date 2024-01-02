@@ -9,5 +9,7 @@ deploy to s3:
     entrypoint: [""]
   script:
     - aws s3 cp website/index.html $S3_BUCKET/index.html
+    - aws s3 cp website/assets/js/main.js $S3_BUCKET/main.js
+    - aws s3 cp website/assets $S3_BUCKET/assets --recursive 
 
 
