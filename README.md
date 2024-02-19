@@ -1,16 +1,27 @@
 # aws-cloud-resume-challenge
 
-Tech Stack used: 
 
-* S3
-* CloudFront
-* Certificate Manager
+
+
+<img width="943" alt="Architecture Diagram" src="https://github.com/jportugal10/aws-cloud-resume-challenge/assets/99933469/a8f52bf1-02ec-44eb-8059-8633c8ebc22c">
+
+
+
+
+Frontend Tech Stack used:
 * Route 53
-* Lambda
-* DyanmoDB
+* CloudFront Distribution
+* S3 Bucket
+
+Backend Tech Stack used:
+* Lambda/Lambda Function URL
+* DynamoDB
 * Terraform
+* GitHub & GitHub Actions
+* GitLab CI/CD Pipeline & Job
 
 
+Quick Overview:
 - Uploaded index.html to an S3 Bucket.
 
 - Created a CloudFront Distribution that points to the S3 and has index.html set as the default root object
@@ -21,4 +32,4 @@ Tech Stack used:
 
 - Set up IAM Policies and roles for security purposes.
 
-- Initialized IaC for backend CI/CD via Terrform and AWS CLI. (See Github repo for code)
+- Initialized IaC for backend CI/CD via Terrform, GitLab and AWS CLI. (See Github repo for code)

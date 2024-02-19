@@ -1,8 +1,4 @@
-/*
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 (function($) {
 
@@ -116,11 +112,16 @@
 
 })(jQuery);
 
+require('dotenv').config();
+const FUNCTION_URL = process.env.function_url;
+
 const counter = document.querySelector(".counter-number");
 async function updateCounter(){
-	let response = await fetch("https://gkbc6rj6wa4aed2ywnfe6tpgyq0zdmtb.lambda-url.us-west-1.on.aws/");
+	let response = await fetch(FUNCTION_URL);
 	let data = await response.json();
 	counter.innerHTML = ` Views: ${data}`;
 
 }
 updateCounter();
+
+
