@@ -8,17 +8,20 @@
 
 
 
-Tech Stack used: 
-
-* S3
-* CloudFront
-* Certificate Manager
+Frontend Tech Stack used:
 * Route 53
-* Lambda
-* DyanmoDB
+* CloudFront Distribution
+* S3 Bucket
+
+Backend Tech Stack used:
+* Lambda/Lambda Function URL
+* DynamoDB
 * Terraform
+* GitHub & GitHub Actions
+* GitLab CI/CD Pipeline & Job
 
 
+Quick Overview:
 - Uploaded index.html to an S3 Bucket.
 
 - Created a CloudFront Distribution that points to the S3 and has index.html set as the default root object
@@ -29,4 +32,4 @@ Tech Stack used:
 
 - Set up IAM Policies and roles for security purposes.
 
-- Initialized IaC for backend CI/CD via Terrform and AWS CLI. (See Github repo for code)
+- Initialized IaC for backend CI/CD via Terrform, GitLab and AWS CLI. (See Github repo for code)
