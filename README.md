@@ -1,5 +1,14 @@
 # aws-cloud-resume-challenge
 
+![image](https://github.com/jportugal10/aws-cloud-resume-challenge/assets/99933469/16bac6d9-e1e7-428a-b75d-6ac9cd926c61)
+
+
+
+
+
+
+
+
 Tech Stack used: 
 
 * S3
