@@ -2,8 +2,8 @@
 
 
 
-![image](https://github.com/jportugal10/aws-cloud-resume-challenge/assets/99933469/74c6aa4c-cebf-446c-8c41-be236a340db9)
 
+<img width="943" alt="Architecture Diagram" src="https://github.com/jportugal10/aws-cloud-resume-challenge/assets/99933469/a8f52bf1-02ec-44eb-8059-8633c8ebc22c">
 
 
 
