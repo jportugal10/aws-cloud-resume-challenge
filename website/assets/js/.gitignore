@@ -1,0 +1,6 @@
+# Ignoring .env file for main.js
+
+*.env
+.env
+
+.DS_Store
