@@ -103,7 +103,7 @@ resource "aws_lambda_function_url" "url1" {
 
   cors {
     allow_credentials = false
-    allow_origins     = ["https://joseportugalresume.com"]
+    allow_origins     = ["https://joseportugal.com"]
   }
 
 }
